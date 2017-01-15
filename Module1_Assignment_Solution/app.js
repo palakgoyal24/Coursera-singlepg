@@ -12,10 +12,11 @@ function LunchController($scope,$filter) {
   $scope.lunchItemStatus = function () {
     if($scope.lunchmenu){
       var lunchstring = $scope.lunchmenu.split(",");
-      if(lunchstring.length < 1){
-         $scope.statusMessage = "Please enter data first!";
-      }
-      else if (lunchstring.length <= 3) {
+      // if(lunchstring.length < 1){
+      //    $scope.statusMessage = "Please enter data first!";
+      // }
+      // else
+      if (lunchstring.length <= 3) {
         $scope.statusMessage = "Enjoy!";
       }
       else if (lunchstring.length > 3) {
